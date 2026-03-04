@@ -9,12 +9,14 @@ import com.staff.demo.entity.Staff;
 import com.staff.demo.repository.StaffRepository;
 
 @Service
+
 public class StaffService {
 
     @Autowired
     private StaffRepository staffRepository;
 
     // Create Staff
+
     public Staff saveStaff(Staff staff) {
         return staffRepository.save(staff);
     }
